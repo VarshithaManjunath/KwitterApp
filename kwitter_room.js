@@ -1,6 +1,19 @@
 
 //ADD YOUR FIREBASE LINKS
 
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+  apiKey: "AIzaSyCLGpxZs2pD9mqZCrFwuOI0gYPdRWN5Ksw",
+  authDomain: "kwitter-6abca.firebaseapp.com",
+  databaseURL: "https://kwitter-6abca-default-rtdb.firebaseio.com",
+  projectId: "kwitter-6abca",
+  storageBucket: "kwitter-6abca.appspot.com",
+  messagingSenderId: "231606977400",
+  appId: "1:231606977400:web:d2d2878892c4b97584fe8d"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
   user_name = localStorage.getItem("user_name");
 
 document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
